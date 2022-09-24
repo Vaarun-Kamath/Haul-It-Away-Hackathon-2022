@@ -9,11 +9,11 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/text_view"
+        android:layout_centerInParent="true"
         android:text="Swipe"
         android:textSize="32sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true" />
+        android:textStyle="bold" />
 </RelativeLayout>
