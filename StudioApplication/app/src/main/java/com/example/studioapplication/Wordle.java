@@ -1,6 +1,8 @@
 package com.example.studioapplication;
 
 
+import static java.security.AccessController.getContext;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
@@ -8,14 +10,17 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TableLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Wordle extends AppCompatActivity {
+    int row_counter = 0, col_counter=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +41,6 @@ public class Wordle extends AppCompatActivity {
                 Log.d("Click","asdfgh");
             }
         });
-        int row_counter = 0, col_counter=0;
         View[][] wordls ={
                 {findViewById(R.id.wordle_11), findViewById(R.id.wordle_12), findViewById(R.id.wordle_13), findViewById(R.id.wordle_14), findViewById(R.id.wordle_15)},
                 {findViewById(R.id.wordle_21),findViewById(R.id.wordle_22),findViewById(R.id.wordle_23),findViewById(R.id.wordle_24),findViewById(R.id.wordle_25)},
@@ -51,18 +55,33 @@ public class Wordle extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-//                wordls[row_counter][col_counter]
-
-                Log.d("textChanged:",Integer.toString(charSequence.length()));
+                Log.d("textChanged len :",Integer.toString(charSequence.length()));
                 Log.d("textChanged i :",Integer.toString(i));
                 Log.d("textChanged i1:",Integer.toString(i1));
                 Log.d("textChanged i2:",Integer.toString(i2));
-                Log.d("textChanged i2:",charSequence.toString());
+                Log.d("textChanged :",charSequence.toString());
+//                Log.d("textChanged seq:",charSequence.toString().substring(i1,i1+1)+"\n++++++\n");
+
+                if(i1<5) {
+                    if(i2<i1) ((TextView)wordls[row_counter][col_counter]).setText(charSequence.toString().substring(i2-1,i2));
+                    else ((TextView)wordls[row_counter][col_counter]).setText(charSequence.toString().substring(i1,i1+1));
+                }
             }
 
             @Override
             public void afterTextChanged(Editable editable) {}
         });
+//        myEditText.setOnKeyListener(new View.OnKeyListener() {
+//            public boolean onKey(View v, int keyCode, KeyEvent event) {
+//                // If the event is a key-down event on the "enter" button
+//                if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
+//                    // Perform action on key press
+//                    Log.d("key:::::::","true");
+//                    return true;
+//                }
+//                return false;
+//            }
+//        });
     }
 
 }
