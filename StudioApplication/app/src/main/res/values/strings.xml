@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">Wordle</string>
+    <string name="app_name">Jet Another Vordle App</string>
     <string name="Wordle_input_placeholder">Input Word</string>
     <string name="Wordle_header">Wordle NEWWW</string>
     <string name="wordle_submit">Submit</string>
+    <string name="wordle_blank_letter"> ____ </string>
 </resources>
