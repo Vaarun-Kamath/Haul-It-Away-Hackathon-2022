@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".Wordle">
 
     <TextView
@@ -32,6 +33,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <TableLayout
+        android:id="@+id/wordle_tbL1"
         android:layout_width="286dp"
         android:layout_height="386dp"
         android:layout_marginTop="72dp"
@@ -55,9 +57,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_12"
@@ -67,9 +69,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_13"
@@ -79,9 +81,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_14"
@@ -91,9 +93,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_15"
@@ -104,9 +106,9 @@
         </LinearLayout>
 
         <Space
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            android:layout_weight="1" />
 
         <LinearLayout
             android:id="@+id/wordle_r2"
@@ -120,9 +122,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_22"
@@ -132,9 +134,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_23"
@@ -144,9 +146,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_24"
@@ -156,9 +158,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_25"
@@ -169,9 +171,9 @@
         </LinearLayout>
 
         <Space
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            android:layout_weight="1" />
 
         <LinearLayout
             android:id="@+id/wordle_r3"
@@ -185,9 +187,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_32"
@@ -197,9 +199,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_33"
@@ -209,9 +211,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_34"
@@ -221,9 +223,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_35"
@@ -234,9 +236,9 @@
         </LinearLayout>
 
         <Space
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            android:layout_weight="1" />
 
         <LinearLayout
             android:id="@+id/wordle_r4"
@@ -250,9 +252,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_42"
@@ -262,9 +264,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_43"
@@ -274,9 +276,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_44"
@@ -286,9 +288,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_45"
@@ -299,9 +301,9 @@
         </LinearLayout>
 
         <Space
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            android:layout_weight="1" />
 
         <LinearLayout
             android:id="@+id/wordle_r5"
@@ -315,9 +317,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_52"
@@ -327,9 +329,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_53"
@@ -339,9 +341,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_54"
@@ -351,9 +353,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_55"
@@ -364,9 +366,9 @@
         </LinearLayout>
 
         <Space
-            android:layout_weight="1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            android:layout_weight="1" />
 
         <LinearLayout
             android:id="@+id/wordle_r6"
@@ -380,9 +382,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_62"
@@ -392,9 +394,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_63"
@@ -404,9 +406,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_64"
@@ -416,9 +418,9 @@
                 android:text="@string/wordle_blank_letter" />
 
             <Space
-                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_width="wrap_content"/>
+                android:layout_weight="1" />
 
             <TextView
                 android:id="@+id/wordle_65"
@@ -429,5 +431,24 @@
 
         </LinearLayout>
     </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/wordle_del_LL"
+        android:layout_width="409dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/wordle_et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
