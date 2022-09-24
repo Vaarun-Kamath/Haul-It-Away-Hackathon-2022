@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Studio Application</string>
+    <string name="app_name">Jet Another Vordle App</string>
+    <string name="Wordle_input_placeholder">Input Word</string>
+    <string name="Wordle_header">Wordle</string>
+    <string name="wordle_submit">Submit</string>
+    <string name="wordle_blank_letter"> </string>
+    <string name="home_frag">Home Fragment Fragment</string>
+    <string name="person_frag">Person Fragment</string>
+    <string name="settings_frag">Settings Fragment</string>
+    <string name="people_text">People</string>
+    <string name="home_text">Home</string>
+    <string name="settings_text">Settings</string>
 </resources>

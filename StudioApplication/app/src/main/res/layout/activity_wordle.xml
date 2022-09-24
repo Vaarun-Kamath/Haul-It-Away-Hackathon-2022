@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Wordle">
+
+    <TextView
+        android:id="@+id/wordle_header"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:text="@string/Wordle_header"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <Button
+        android:id="@+id/wordle_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="92dp"
+        android:text="@string/wordle_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordle_header"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TableLayout
+        android:id="@+id/wordle_tbL1"
+        android:layout_width="286dp"
+        android:layout_height="386dp"
+        android:layout_marginTop="72dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/wordle_submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wordle_header"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/wordle_r1"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/wordle_11"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_12"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_13"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_14"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_15"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/wordle_r2"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/wordle_21"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_22"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_23"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_24"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_25"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/wordle_r3"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/wordle_31"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_32"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_33"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_34"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_35"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/wordle_r4"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/wordle_41"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_42"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_43"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_44"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_45"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/wordle_r5"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/wordle_51"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_52"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_53"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_54"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_55"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/wordle_r6"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/wordle_61"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_62"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_63"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_64"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wordle_65"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
+
+        </LinearLayout>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/wordle_del_LL"
+        android:layout_width="409dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/wordle_et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
