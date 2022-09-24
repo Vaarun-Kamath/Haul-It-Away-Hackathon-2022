@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link HomeFragment#newInstance} factory method to
@@ -73,16 +75,14 @@ public class HomeFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity())); //TODO DOES IT WORK???
 
-        MyMovieData[] myMovieData = new MyMovieData[]{
-                new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1),
-                new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1),
-                new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1),
-                new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1),
-                new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1),
-                new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1),
+        ArrayList<MyMovieData> myMovieData = new ArrayList<MyMovieData>();
+                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
 
-
-        };
 
         MyMovieAdapter myMovieAdapter = new MyMovieAdapter(myMovieData, (MainActivity) getActivity());
         recyclerView.setAdapter(myMovieAdapter );

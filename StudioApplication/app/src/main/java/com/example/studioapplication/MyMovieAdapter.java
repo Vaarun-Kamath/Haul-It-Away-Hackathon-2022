@@ -11,13 +11,15 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.ArrayList;
+
 
 public class MyMovieAdapter extends RecyclerView.Adapter<MyMovieAdapter.ViewHolder> {
 
-    MyMovieData[] myMovieData;
+    ArrayList<MyMovieData>myMovieData;
     Context context;
 
-    public MyMovieAdapter(MyMovieData[] myMovieData, MainActivity activity) {
+    public MyMovieAdapter(ArrayList<MyMovieData> myMovieData, MainActivity activity) {
         this.myMovieData = myMovieData;
         this.context = activity;
 
@@ -34,7 +36,7 @@ public class MyMovieAdapter extends RecyclerView.Adapter<MyMovieAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        final MyMovieData myMovieDataList = myMovieData[position];
+        final MyMovieData myMovieDataList = myMovieData.get(position);
 //        holder.videoImage.setImageResource(myMovieDataList.getMovieImage());
         holder.textViewDate.setText(myMovieDataList.getVideoDate());
         holder.textViewTime.setText(myMovieDataList.getVideoTime());
@@ -51,7 +53,7 @@ public class MyMovieAdapter extends RecyclerView.Adapter<MyMovieAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return myMovieData.length;
+        return myMovieData.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
