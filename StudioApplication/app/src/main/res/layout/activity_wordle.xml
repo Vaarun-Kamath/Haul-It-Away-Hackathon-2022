@@ -49,8 +49,9 @@
 
             <TextView
                 android:id="@+id/wordle_11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -60,8 +61,9 @@
 
             <TextView
                 android:id="@+id/wordle_12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -71,8 +73,9 @@
 
             <TextView
                 android:id="@+id/wordle_13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -82,8 +85,9 @@
 
             <TextView
                 android:id="@+id/wordle_14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -93,10 +97,16 @@
 
             <TextView
                 android:id="@+id/wordle_15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
         </LinearLayout>
+
+        <Space
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
 
         <LinearLayout
             android:id="@+id/wordle_r2"
@@ -104,8 +114,9 @@
 
             <TextView
                 android:id="@+id/wordle_21"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -115,8 +126,9 @@
 
             <TextView
                 android:id="@+id/wordle_22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -126,8 +138,9 @@
 
             <TextView
                 android:id="@+id/wordle_23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -137,8 +150,9 @@
 
             <TextView
                 android:id="@+id/wordle_24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -148,10 +162,16 @@
 
             <TextView
                 android:id="@+id/wordle_25"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
         </LinearLayout>
+
+        <Space
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
 
         <LinearLayout
             android:id="@+id/wordle_r3"
@@ -159,8 +179,9 @@
 
             <TextView
                 android:id="@+id/wordle_31"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -170,8 +191,9 @@
 
             <TextView
                 android:id="@+id/wordle_32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -181,8 +203,9 @@
 
             <TextView
                 android:id="@+id/wordle_33"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -192,8 +215,9 @@
 
             <TextView
                 android:id="@+id/wordle_34"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -203,10 +227,16 @@
 
             <TextView
                 android:id="@+id/wordle_35"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
         </LinearLayout>
+
+        <Space
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
 
         <LinearLayout
             android:id="@+id/wordle_r4"
@@ -214,8 +244,9 @@
 
             <TextView
                 android:id="@+id/wordle_41"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -225,8 +256,9 @@
 
             <TextView
                 android:id="@+id/wordle_42"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -236,8 +268,9 @@
 
             <TextView
                 android:id="@+id/wordle_43"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -247,8 +280,9 @@
 
             <TextView
                 android:id="@+id/wordle_44"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -258,10 +292,16 @@
 
             <TextView
                 android:id="@+id/wordle_45"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
         </LinearLayout>
+
+        <Space
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
 
         <LinearLayout
             android:id="@+id/wordle_r5"
@@ -269,8 +309,9 @@
 
             <TextView
                 android:id="@+id/wordle_51"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -280,8 +321,9 @@
 
             <TextView
                 android:id="@+id/wordle_52"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -291,8 +333,9 @@
 
             <TextView
                 android:id="@+id/wordle_53"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -302,8 +345,9 @@
 
             <TextView
                 android:id="@+id/wordle_54"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -313,10 +357,16 @@
 
             <TextView
                 android:id="@+id/wordle_55"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
         </LinearLayout>
+
+        <Space
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
 
         <LinearLayout
             android:id="@+id/wordle_r6"
@@ -324,8 +374,9 @@
 
             <TextView
                 android:id="@+id/wordle_61"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -335,8 +386,9 @@
 
             <TextView
                 android:id="@+id/wordle_62"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -346,8 +398,9 @@
 
             <TextView
                 android:id="@+id/wordle_63"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
             <Space
@@ -356,10 +409,11 @@
                 android:layout_width="wrap_content"/>
 
             <TextView
-                    android:id="@+id/wordle_64"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/wordle_blank_letter" />
+                android:id="@+id/wordle_64"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
+                android:text="@string/wordle_blank_letter" />
 
             <Space
                 android:layout_weight="1"
@@ -368,8 +422,9 @@
 
             <TextView
                 android:id="@+id/wordle_65"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/wordle_letter_width"
+                android:layout_height="@dimen/wordle_letter_height"
+                android:background="@color/material_dynamic_neutral20"
                 android:text="@string/wordle_blank_letter" />
 
         </LinearLayout>
