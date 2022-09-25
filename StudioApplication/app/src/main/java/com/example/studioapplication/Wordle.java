@@ -26,6 +26,7 @@ import java.util.Locale;
 
 public class Wordle extends AppCompatActivity {
     int row_counter = 0, col_counter = 0;
+    boolean stopListn = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +62,7 @@ public class Wordle extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (stopListn) return;
                 Log.d("textChanged len :",Integer.toString(charSequence.length()));
                 Log.d("textChanged i :",Integer.toString(i));
                 Log.d("textChanged i1:",Integer.toString(i1));
@@ -69,10 +71,24 @@ public class Wordle extends AppCompatActivity {
 //                Log.d("textChanged seq:",charSequence.toString().substring(i1,i1+1)+"\n++++++\n");
 
                 if(i1<5) {
-                    if(i2<i1) ((TextView)wordls[row_counter][i2]).setText("");
-                    else ((TextView)wordls[row_counter][i1]).setText(charSequence.toString().substring(i1,i1+1));
+                    if(i2<i1) {
+                        ((TextView) wordls[row_counter][i2]).setText("");
+//                        Log.d("i2<i1 :",i+"::"+i1+":"+i2);
+                    }
+                    else {
+                        ((TextView)wordls[row_counter][i1]).setText(charSequence.toString().substring(i1,i1+1));
+//                        Log.d("i2>=i1 :",i+"::"+i1+":"+i2);
+                    }
                 }else{
-                    ((EditText)findViewById(R.id.wordle_et1)).setText(charSequence.subSequence(i,i2));
+                    if(i2<i1) {
+                        ((TextView) wordls[row_counter][i2]).setText("");
+//                        Log.d("i2<i1>=5 :",i+"::"+i1+":"+i2);
+                    }else {
+                        stopListn = true;
+                        ((EditText) findViewById(R.id.wordle_et1)).setText(charSequence.subSequence(i, i2));
+//                        Log.d("i1>=5 :", i + "::" + i1 + ":" + i2);
+                        stopListn = false;
+                    }
                 }
             }
 
@@ -92,9 +108,8 @@ public class Wordle extends AppCompatActivity {
                     row_counter++;
                     if(row_counter>=6){
                         for (int i=0;i<6;i++){
-                            for(int j=0;j<5;j++){
-                                ((EditText)wordls[i][j]).setText("");
-                            }
+                            for(int j=0;j<5;j++)
+                                ((TextView)wordls[i][j]).setText("");
                         }
                         row_counter=0;
                     }
