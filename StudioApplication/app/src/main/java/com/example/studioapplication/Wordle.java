@@ -6,6 +6,7 @@ import static java.security.AccessController.getContext;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -18,6 +19,8 @@ import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Locale;
 
 public class Wordle extends AppCompatActivity {
     int row_counter = 0, col_counter=0;
@@ -63,25 +66,40 @@ public class Wordle extends AppCompatActivity {
 //                Log.d("textChanged seq:",charSequence.toString().substring(i1,i1+1)+"\n++++++\n");
 
                 if(i1<5) {
-                    if(i2<i1) ((TextView)wordls[row_counter][col_counter]).setText(charSequence.toString().substring(i2-1,i2));
-                    else ((TextView)wordls[row_counter][col_counter]).setText(charSequence.toString().substring(i1,i1+1));
+                    if(i2<i1) ((TextView)wordls[row_counter][i2]).setText("");
+                    else ((TextView)wordls[row_counter][i1]).setText(charSequence.toString().substring(i1,i1+1));
+                }else{
+                    ((EditText)findViewById(R.id.wordle_et1)).setText(charSequence.subSequence(i,i2));
                 }
             }
 
             @Override
             public void afterTextChanged(Editable editable) {}
         });
-//        myEditText.setOnKeyListener(new View.OnKeyListener() {
-//            public boolean onKey(View v, int keyCode, KeyEvent event) {
-//                // If the event is a key-down event on the "enter" button
-//                if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
-//                    // Perform action on key press
-//                    Log.d("key:::::::","true");
-//                    return true;
-//                }
-//                return false;
-//            }
-//        });
+        myEditText.setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                // If the event is a key-down event on the "enter" button
+                if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                    // Perform action on key press
+                    Log.d("key:::::::","true"+Integer.toString(keyCode));
+                    if (((EditText) findViewById(R.id.wordle_et1)).getText().toString().toUpperCase(Locale.ROOT).equals("AIKYA")){
+                        Intent I = new Intent(v.getContext(),MainActivity.class);
+                        startActivityForResult(I,0);
+                    }
+                    row_counter++;
+                    if(row_counter>=6){
+                        for (int i=0;i<6;i++){
+                            for(int j=0;j<5;j++){
+                                ((EditText)wordls[i][j]).setText("");
+                            }
+                        }
+                        row_counter=0;
+                    }
+                    return true;
+                }
+                return false;
+            }
+        });
     }
 
 }
