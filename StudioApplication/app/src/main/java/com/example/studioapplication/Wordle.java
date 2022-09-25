@@ -82,7 +82,11 @@ public class Wordle extends AppCompatActivity {
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     // Perform action on key press
                     Log.d("key:::::::","true"+Integer.toString(keyCode));
-                    if (((EditText) findViewById(R.id.wordle_et1)).getText().toString().toUpperCase(Locale.ROOT).equals("AIKYA")){
+                    if (myEditText.getText().toString().toUpperCase(Locale.ROOT).equals("AIKYA")){
+                        for (int i=0;i<6;i++){
+                            for(int j=0;j<5;j++)
+                                ((TextView)wordls[i][j]).setText("");
+                        }
                         Intent I = new Intent(v.getContext(),MainActivity.class);
                         startActivityForResult(I,0);
                     }
@@ -90,7 +94,7 @@ public class Wordle extends AppCompatActivity {
                     if(row_counter>=6){
                         for (int i=0;i<6;i++){
                             for(int j=0;j<5;j++){
-                                ((EditText)wordls[i][j]).setText("");
+                                ((TextView)wordls[i][j]).setText("");
                             }
                         }
                         row_counter=0;
