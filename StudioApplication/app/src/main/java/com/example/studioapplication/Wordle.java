@@ -27,6 +27,8 @@ import java.util.Locale;
 public class Wordle extends AppCompatActivity {
     int row_counter = 0, col_counter = 0;
     boolean stopListn = false;
+    String password = "AIKYA";
+    String target;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class Wordle extends AppCompatActivity {
         setContentView(R.layout.activity_wordle);
         InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
+
         TableLayout a = (TableLayout)findViewById(R.id.wordle_tbL1);
         EditText myEditText = (EditText)findViewById(R.id.wordle_et1);
         a.setOnClickListener(new View.OnClickListener() {
@@ -101,7 +104,8 @@ public class Wordle extends AppCompatActivity {
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {
                     // Perform action on key press
                     Log.d("key:::::::","true"+Integer.toString(keyCode));
-                    if (((EditText) findViewById(R.id.wordle_et1)).getText().toString().toUpperCase(Locale.ROOT).equals("AIKYA")){
+
+                    if (((EditText) findViewById(R.id.wordle_et1)).getText().toString().toUpperCase(Locale.ROOT).equals(password)){
                         Intent I = new Intent(v.getContext(),MainActivity.class);
                         startActivityForResult(I,0);
                     }
