@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentTransaction;
 //import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.studioapplication.databinding.ActivityMainBinding;
 
@@ -22,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_main); TODO IDK WHAT HE DID BUT HE REMOVED THE PARAMETERS HERE I DIDNT WANT TO DELETE :)
         setContentView(binding.getRoot());
         replaceFragment(new HomeFragment());
-
         binding.bottomNavigationView.setOnItemReselectedListener(item -> {
 
             switch (item.getItemId()) {
