@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout relativeLayout;
     TextView textView;
     SwipeListener swipeListener;
+    int red=false;
 //    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +72,11 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public boolean onDoubleTap(MotionEvent e) {
                     textView.setText("Double Tapped");
+                    if(red){
+                        ((RelativeLayout)findViewById(R.id.relative_layout)).setBackgroundColor(Color.parseColor("#FFFFFF"));
+                    }else{
+                        ((RelativeLayout)findViewById(R.id.relative_layout)).setBackgroundColor(Color.parseColor("#FF0000"));
+                    }
                     return true;
                 }
 
