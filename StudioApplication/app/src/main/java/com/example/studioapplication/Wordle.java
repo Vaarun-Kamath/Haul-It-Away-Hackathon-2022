@@ -1,7 +1,6 @@
 package com.example.studioapplication;
 
 
-
 import static java.security.AccessController.getContext;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +27,16 @@ import java.util.Locale;
 public class Wordle extends AppCompatActivity {
     int row_counter = 0, col_counter=0;
 
+    View[][] rows ={
+            {findViewById(R.id.wordle_11), findViewById(R.id.wordle_12), findViewById(R.id.wordle_13), findViewById(R.id.wordle_14), findViewById(R.id.wordle_15)},
+            {findViewById(R.id.wordle_21),findViewById(R.id.wordle_22),findViewById(R.id.wordle_23),findViewById(R.id.wordle_24),findViewById(R.id.wordle_25)},
+            {findViewById(R.id.wordle_31),findViewById(R.id.wordle_32),findViewById(R.id.wordle_33),findViewById(R.id.wordle_34),findViewById(R.id.wordle_35)},
+            {findViewById(R.id.wordle_41),findViewById(R.id.wordle_42),findViewById(R.id.wordle_43),findViewById(R.id.wordle_44),findViewById(R.id.wordle_45)},
+            {findViewById(R.id.wordle_51),findViewById(R.id.wordle_52),findViewById(R.id.wordle_53),findViewById(R.id.wordle_54),findViewById(R.id.wordle_55)},
+            {findViewById(R.id.wordle_61),findViewById(R.id.wordle_62),findViewById(R.id.wordle_63),findViewById(R.id.wordle_64),findViewById(R.id.wordle_65)}
+    };
+
+    int row_counter = 0, col_counter=0;
     View[][] rows ={
             {findViewById(R.id.wordle_11), findViewById(R.id.wordle_12), findViewById(R.id.wordle_13), findViewById(R.id.wordle_14), findViewById(R.id.wordle_15)},
             {findViewById(R.id.wordle_21),findViewById(R.id.wordle_22),findViewById(R.id.wordle_23),findViewById(R.id.wordle_24),findViewById(R.id.wordle_25)},
