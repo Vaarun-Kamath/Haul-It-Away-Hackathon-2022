@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout relativeLayout;
     TextView textView;
     SwipeListener swipeListener;
-    int red=false;
+    boolean red=false;
 //    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
