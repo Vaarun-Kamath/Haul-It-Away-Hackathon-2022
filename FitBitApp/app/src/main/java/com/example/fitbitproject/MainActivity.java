@@ -77,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     }else{
                         ((RelativeLayout)findViewById(R.id.relative_layout)).setBackgroundColor(Color.parseColor("#FF0000"));
                     }
+                    red=!red;
                     return true;
                 }
 
