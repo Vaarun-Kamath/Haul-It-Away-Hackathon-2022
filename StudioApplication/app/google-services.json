@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "597109110729",
+    "project_id": "fitbytes-88726",
+    "storage_bucket": "fitbytes-88726.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597109110729:android:6a0c09f3fe64b304609a18",
+        "android_client_info": {
+          "package_name": "com.example.studioapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597109110729-vq7s6pngr47pje35kcu8ofd8b8m7eonk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpXtSFd2WROFer2GZhst3cKXihBFxPKBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597109110729-vq7s6pngr47pje35kcu8ofd8b8m7eonk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
