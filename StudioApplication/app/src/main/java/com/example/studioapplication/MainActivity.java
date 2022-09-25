@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.example.studioapplication.databinding.ActivityMainBinding;
 
 import java.io.File;
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -130,8 +131,22 @@ public class MainActivity extends AppCompatActivity {
 
     private String getRecordingFilePath() {
         ContextWrapper contextWrapper = new ContextWrapper(getApplicationContext());
-        File musicDirectory = contextWrapper.getExternalFilesDir(Environment.DIRECTORY_MUSIC);
+        File musicDirectory = contextWrapper.getExternalFilesDir(".");
+        Log.d("D", Environment.DIRECTORY_MUSIC);
         File file = new File(musicDirectory,"testRecordingFile"+".mp3");
         return file.getPath();
+//        return Environment.getExternalStorageDirectory().getAbsolutePath()+"/"+
+//                CreateRandomName(5) + ".mp3";
+    }
+
+    String RandomAudioFileName = "ABCDEFGHIJKLMNOP";
+    public String CreateRandomName(int length){
+        StringBuilder stringBuilder = new StringBuilder( length );
+        Random random = new Random();
+        for(int i = 0; i < length; i++ ) {
+            stringBuilder.append(RandomAudioFileName.
+                    charAt(random.nextInt(RandomAudioFileName.length())));
+        }
+        return stringBuilder.toString();
     }
 }
