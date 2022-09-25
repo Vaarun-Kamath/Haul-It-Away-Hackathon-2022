@@ -76,12 +76,12 @@ public class HomeFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity())); //TODO DOES IT WORK???
 
         ArrayList<MyMovieData> myMovieData = new ArrayList<MyMovieData>();
-                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
-                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
-                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
-                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
-                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
-                myMovieData.add(new MyMovieData("DateINFO","TimeINFO","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("24 SEP 22","9:16","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("24 SEP 22","10:31","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("24 SEP 22","11:01","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("25 SEP 22","00:56","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("25 SEP 22","02:11","LocationINFO","HeartINFO",1));
+                myMovieData.add(new MyMovieData("25 SEP 22","3:29","LocationINFO","HeartINFO",1));
 
 
         MyMovieAdapter myMovieAdapter = new MyMovieAdapter(myMovieData, (MainActivity) getActivity());

@@ -98,6 +98,7 @@ public class Wordle extends AppCompatActivity {
                         }
                         row_counter=0;
                     }
+                    myEditText.setText("");
                     return true;
                 }
                 return false;
