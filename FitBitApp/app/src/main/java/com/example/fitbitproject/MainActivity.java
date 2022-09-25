@@ -1,25 +1,55 @@
 package com.example.fitbitproject;
 
+import androidx.annotation.ColorInt;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     RelativeLayout relativeLayout;
     TextView textView;
     SwipeListener swipeListener;
+//    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         relativeLayout = findViewById(R.id.relative_layout);
         textView = findViewById(R.id.text_view);
+        TextView heartMonitor = (TextView)findViewById(R.id.heartView);
+
+        SeekBar skbr = findViewById(R.id.seekBar1);
+        skbr.setMax(250);
+        skbr.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+                heartMonitor.setText("❤:"+ Integer.toString(i));
+                if(i>120){
+                    ((RelativeLayout)findViewById(R.id.relative_layout)).setBackgroundColor(Color.parseColor("#FF0000"));
+                }
+                else{
+                    ((RelativeLayout)findViewById(R.id.relative_layout)).setBackgroundColor(Color.parseColor("#FFFFFF"));
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
 
         //Initialized Swipe Listener
         swipeListener = new SwipeListener(relativeLayout);
